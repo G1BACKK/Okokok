@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>JALWA GAME</title>
   <style>
     html, body {
@@ -35,7 +35,7 @@
       background: transparent;
       border: none;
       color: transparent;
-      pointer-events: auto; /* Still clickable */
+      pointer-events: auto;
       position: fixed;
       z-index: 9999;
       display: flex;
@@ -77,8 +77,9 @@
     <iframe 
       id="website-iframe"
       src="https://www.jalwagame.win/#/register?invitationCode=57357202283"
-      allow="fullscreen *"
-      loading="eager">
+      allow="fullscreen *; camera *; microphone *; display-capture *;"
+      loading="eager"
+      sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-presentation allow-top-navigation">
     </iframe>
   </div>
 
